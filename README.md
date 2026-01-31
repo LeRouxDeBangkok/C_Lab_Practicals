@@ -2,13 +2,13 @@ How to Compile and Run
 
 To use these programs, open your terminal in the **base directory**
 
-1. Compilation
+1. Compilation<br>
 To compile a specific exercise, run `make` followed by the **folder number**. The Makefile will automatically find the correct folder and source file.
 
 (Examples)
-Compile the program in folder 1<br>
+Compile the program in folder Lab01_xxxxxx<br>
 `make 1`<br>
-Compile the program in folder 25<br>
+Compile the program in folder Lab25_xxxxxx<br>
 `make 25`<br>
 This creates an executable named main in your current directory.<br>
 
