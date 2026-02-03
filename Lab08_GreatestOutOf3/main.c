@@ -12,6 +12,12 @@ int main() {
     scanf("%d", &choice);
 
     if (choice == 1) {
+        int max = (a > b) ? 
+              ((a > c) ? a : c) : 
+              ((b > c) ? b : c);
+              
+        printf("The greatest number is: %d\n", max);
+    } else if (choice == 2) {
         while(a>b || b>c) {
             if (a > b) {
                 int temp = a;
@@ -25,8 +31,6 @@ int main() {
             }
         }
         printf("%d < %d < %d", a, b, c);
-    } else if (choice == 2) {
-        return 1;
     } else {
         printf("Error, wrong choice");
         return 1;
