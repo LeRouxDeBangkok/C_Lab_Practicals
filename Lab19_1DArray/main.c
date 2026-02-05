@@ -10,18 +10,22 @@ int main() {
     printf("3. Delete\n");
     printf("4. Display\n");
     printf("5. Search\n");
-    scanf("%d", choice);
+    scanf("%d", &choice);
 
     if (choice == 1) {
-        todo();
+        return 1;
     } else if (choice == 2) {
-        todo();
+        return 1;
     } else if (choice == 3) {
-        todo();
+        return 1;
     } else if (choice == 4) {
-        todo();
+        int i = 0;
+        while (arr[i]) {
+            printf("%d ", arr[i]);
+            i++;
+        }
     } else if (choice == 5) {
-        todo();
+        return 1;
     } else {
         printf("Error, invalid choice");
         return 1;
