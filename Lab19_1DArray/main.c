@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int arr[100] = {1, 2, 3, 4, 5, 6};
+    int choice;
+    printf("Array is initialized with {1, 2, 3, 4, 5, 6}\n");
+    printf("Choose your operation:\n");
+    printf("1. Insert\n");
+    printf("2. Update\n");
+    printf("3. Delete\n");
+    printf("4. Display\n");
+    printf("5. Search\n");
+    scanf("%d", choice);
+
+    if (choice == 1) {
+        todo();
+    } else if (choice == 2) {
+        todo();
+    } else if (choice == 3) {
+        todo();
+    } else if (choice == 4) {
+        todo();
+    } else if (choice == 5) {
+        todo();
+    } else {
+        printf("Error, invalid choice");
+        return 1;
+    }
+    return 0;
+}
