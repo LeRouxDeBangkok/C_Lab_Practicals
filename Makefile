@@ -14,7 +14,6 @@ clean:
 	rm -f */$(TARGET)
 
 %:
-	@# checks for both 'Lab01' (padded) and 'Lab1' (unpadded) so it works for 1-9 and 10+
 	@FOLDER=$$(ls -d Lab0$@_* Lab$@_* 2>/dev/null | head -n 1); \
 	if [ -z "$$FOLDER" ]; then \
 		echo "Error: No folder found for Lab0$@_ or Lab$@_"; \
