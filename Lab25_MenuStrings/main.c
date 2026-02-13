@@ -62,7 +62,7 @@ int main() {
             printf("After strrev: %s", input);
 
             The code above does not work, reason:
-            Using GCC to compile, even with the string.h library, strrev in
+            Using GCC to compile, even with the string.h library, strrev is
             not in the GCC compiler, so this does not compile if using GCC.
             I've provided my own implmentation of strrev below as a replacement
             */

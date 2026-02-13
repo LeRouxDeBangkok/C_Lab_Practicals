@@ -1,30 +1,29 @@
 #include <stdio.h>
 
+struct Distance {
+    int feet;
+    int inch;
+};
+
 int main() {
-    int feet1, feet2, feet3, inch1, inch2, inch3, m, cm;
+    struct Distance d1, d2, d3;
     
-    printf("Enter first distance in inferior units:\n");
+    printf("Enter first distance in feet/inch units:\n");
     printf("Feet: ");
-    scanf("%d", &feet1);
+    scanf("%d", &d1.feet);
     printf("Inches: ");
-    scanf("%d", &inch1);
-    printf("Enter second distance in freedom units:\n");
+    scanf("%d", &d1.inch);
+    printf("Enter second distance in feet/inch units:\n");
     printf("Feet: ");
-    scanf("%d", &feet2);
+    scanf("%d", &d2.feet);
     printf("Inches: ");
-    scanf("%d", &inch2);
+    scanf("%d", &d2.inch);
 
-    inch3 = inch1 + inch2;
-    feet3 = feet1 + feet2 + (inch3 / 12);
-    inch3 = inch3 % 12; 
-    int total_inches = (feet3 * 12) + inch3;
-    float total_cm = total_inches * 2.54;
-    m = (int)total_cm / 100;
-    cm = (int)total_cm % 100;
+    d3.inch = d1.inch + d2.inch;
+    d3.feet = d1.feet + d2.feet + (d3.inch / 12);
+    d3.inch = d3.inch % 12; 
 
-    printf("Total= %d feet %d inches\n", feet3, inch3);
-    printf("Bonus, special translation to the only measuring system that makes sense:\n");
-    printf("Total = %d meters, %d centimeters\n", m, cm);
+    printf("Total= %d feet %d inches\n", d3.feet, d3.inch);
 
     return 0;
 }
